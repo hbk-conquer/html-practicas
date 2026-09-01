@@ -8,32 +8,156 @@
 <body>
     
     <header>
-        <h1>PROYECTOS</h1>
-        <img src="img/Fenix.jpg" alt="Imagen de perfil" width="250">
-        <nav>
-            <ul>
-                <li><a href="index.html#sobre-mi">Sobre mí</a></li>
-                <li><a href="index.html#tecnologias">Tecnologías que estoy aprendiendo</a></li>
-                <li><a href="index.html#enlaces">Mis enlaces</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-            </ul>
-        </nav>
+        <section id="proyectos">
+            <h1>PROYECTOS</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">👈Volver atrás</a></li>
+                    </ul>
+                </nav>
+        </section>        
     </header>
 
-    <main> 
-        <section id="proyectos">
+    <main>
+        <hr>
+        <section>
             <h2>Estos son algunos de los proyectos en los que he trabajado:</h2>
             <ul>
-                <li>Prop OS - Alpha</li>
-                <li>Nasdaq NY opening EA - MT5</li>
+                <li><a href="#nasdaq">Nasdaq NY opening EA - MT5</a></li>
+                <li><a href="#propOs">Prop OS - Alpha</a></li>
             </ul>
         </section>
+        <hr>
+        <section id="nasdaq">
+            <h3>Nasdaq NY opening EA - MT5</h3>
+                <p>Este proyecto nace con el objetivo de transformar una estrategia de trading basada
+                    en la apertura de la sesión de Nueva York en un sistema completamente automatizado,
+                    capaz de analizar el mercado, ejecutar operaciones y gestionar el riesgo siguiendo unas
+                    reglas previamente definidas.</p>
+
+                <p>El Expert Advisor está diseñado principalmente para operar índices como <strong>Nasdaq y S&P 500</strong>,
+                    concentrando su operativa en uno de los momentos con mayor actividad y volumen del mercado: 
+                    la apertura de Nueva York.</p>
+
+                <p>Una de las características principales del sistema es su simplicidad operativa: 
+                    <strong>realiza un máximo de una operación al día</strong>. De esta forma se evita el sobreoperar
+                    y cada entrada responde exclusivamente a las condiciones establecidas dentro de la estrategia.</p>
+
+                <p>Una vez abierta una posición, el EA se encarga automáticamente de toda la gestión. 
+                    El sistema controla el riesgo inicial, los niveles de beneficio y la evolución del Stop Loss
+                    a medida que el precio avanza a favor de la operación. Esto permite proteger beneficios 
+                    progresivamente sin necesidad de intervenir manualmente.</p>
+
+                <p>También incorpora diferentes controles relacionados con los horarios de mercado, el cierre 
+                automático de posiciones y la adaptación a los cambios horarios entre Europa y Estados Unidos.</p>
+
+            <h4>Desarrollo y análisis</h4>
+
+                <p>Antes de utilizar el sistema, la estrategia ha sido sometida a pruebas sobre varios años de datos
+                    históricos para analizar su comportamiento en diferentes condiciones de mercado.</p>
+
+                <p>El desarrollo del EA no se ha limitado únicamente a automatizar una entrada. 
+                    Gran parte del proyecto se ha centrado en trabajar aspectos como:</p>
+
+                    <ul>
+                        <li>Gestión automática del riesgo.</li>
+                        <li>Cálculo dinámico del tamaño de posición.</li>
+                        <li>Gestión progresiva del Stop Loss.</li>
+                        <li>Control de horarios y sesiones.</li>
+                        <li>Limitación de operaciones diarias.</li>
+                        <li>Cierre automático de posiciones.</li>
+                        <li>Backtesting y análisis de resultados.</li>
+                        <li>Adaptación para trabajar simultáneamente con diferentes cuentas.</li>
+                    </ul>
+                <p>Este proyecto representa la combinación de dos de las áreas en las que más trabajo actualmente:
+                    <strong>trading y desarrollo de software.</strong></p>
+                <p>La idea detrás del sistema es sencilla: <em>convertir una estrategia definida en un proceso 
+                    objetivo y repetible</em>, eliminando gran parte de la intervención emocional y 
+                    permitiendo que las reglas se ejecuten siempre de la misma manera.</p>
+        </section>
+        <hr>
+        <section id="propOs">
+            <h3>Prop OS - Alpha</h3>
+                <p><strong>Prop OS</strong> es un software de gestión que estoy desarrollando para organizar y 
+                    optimizar la operativa con múltiples cuentas de empresas de fondeo.</p>
+                
+                <p>El proyecto nace de un problema muy concreto: cuando se gestionan simultáneamente diferentes 
+                    cuentas financiadas, evaluaciones y fases de challenge, la dificultad deja de estar únicamente 
+                    en encontrar una buena operación. También es necesario decidir <strong>qué cuenta operar, 
+                    cuánto riesgo asumir, qué cuentas priorizar y cuándo dejar una cuenta sin operar</strong>.</p>
+                
+                <p>Prop OS centraliza toda esa información en un único entorno y permite tener una visión 
+                    clara del estado completo de la cartera.</p>
+
+                <p>El software registra y organiza aspectos como:</p>
+                    <ul> 
+                        <li>Cuentas financiadas y cuentas en evaluación.</li>
+                        <li>Fase actual de cada cuenta.</li>
+                        <li>Balance y evolución individual.</li>
+                        <li>Objetivos de beneficio.</li>
+                        <li>Drawdown disponible.</li>
+                        <li>Riesgo utilizado.</li>
+                        <li>Días operados.</li>
+                        <li>Fechas y ciclos de payout.</li>
+                        <li>Resultados de las operaciones.</li>
+                        <li>Progreso hacia nuevas cuentas financiadas.</li>
+                        <li>Costes asociados a nuevas evaluaciones.</li>
+                    </ul>
+                
+                <p>El objetivo es convertir la gestión de cuentas de fondeo en un proceso más estructurado, 
+                    medible y escalable.</p>
+
+            <h4>La relación entre Prop OS y el EA</h4>
+                <p>Prop OS está estrechamente relacionado con mi <strong>EA de apertura de Nueva York.</strong></p>
+                
+                <p>Mientras el EA se encarga de la parte operativa <em>—analizar el mercado, ejecutar una 
+                    operación y gestionar automáticamente la posición—</em>, Prop OS trabaja en un nivel superior.</p>
+                
+                <p>Su función es decidir <strong>dónde tiene más sentido utilizar esa operativa.</strong></p>
+                
+                <p>En otras palabras:</p>
+                
+                <p><strong>El EA gestiona la operación.<br>Prop OS gestiona el sistema alrededor de la operación.</strong></p>
+                
+                <p>Por ejemplo, si existen varias evaluaciones y cuentas financiadas al mismo tiempo, 
+                    no siempre es conveniente operar todas ellas. Algunas pueden encontrarse cerca de 
+                    alcanzar un objetivo, otras pueden tener poco margen de drawdown y otras pueden estar 
+                    próximas a un payout.</p>
+                
+                <p>Prop OS utiliza el estado de cada cuenta para ayudar a determinar cuál 
+                    debería tener prioridad en cada sesión.</p>
+                
+                <p>De esta forma, la estrategia deja de analizarse únicamente operación por operación y 
+                    empieza a gestionarse desde una perspectiva de <strong>cartera</strong>.</p>
+
+            <h4>Un sistema conectado</h4>
+                <p>La combinación de ambos proyectos crea una arquitectura dividida en dos niveles.</p>
+
+                <p>El <strong>EA</strong> funciona como motor de ejecución, aplicando de forma automática una 
+                    estrategia definida y una gestión de riesgo concreta.</p>
+                
+                <p><strong>Prop OS</strong> funciona como capa de control y gestión, organizando las cuentas, 
+                    registrando resultados y ayudando a distribuir la operativa de forma eficiente.</p>
+
+                <p>El objetivo a largo plazo es continuar conectando ambos sistemas para reducir cada vez más 
+                    los procesos manuales y construir una infraestructura capaz de gestionar una cartera creciente 
+                    de cuentas de forma ordenada.</p>
+
+                <p>Este proyecto combina varias de las áreas que más me interesan actualmente: 
+                    <strong>trading algorítmico, desarrollo de software, automatización, análisis de datos y 
+                        gestión de riesgo.</strong></p>
+
+                <p>La idea detrás de Prop OS es sencilla: no limitarse a automatizar una estrategia, sino 
+                    construir el sistema necesario para poder <strong>gestionarla y escalarla.</strong></p>
+
+
+        </section>
+        <hr>
     </main>
 
 
     <footer>
-        <p>Página de proyectos de HBK</p>
-        <p><a href="index.html" title="Volver a la página principal">Menú Principal</a></p>
+        <p>© 2026 HBK. Todos los derechos reservados.<br>Trading · Desarrollo de software · Automatización · Tecnología</p>
     </footer>
 </body>
 </html>
