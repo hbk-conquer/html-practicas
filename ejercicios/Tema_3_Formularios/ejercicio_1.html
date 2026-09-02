@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro -Mi web</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de registro</h1>
+            <nav>
+                <p><a href="Tema_3_Formularios.html">👈Volver atrás</a></p>
+                <p><a href="../../index.html">👈👈Página de inicio</a></p>
+            </nav>
+        <hr>
+    </header>
+
+    <body>
+        <form action="" method="get">
+
+            <div>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="50">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos" maxlength="50">
+                </p>
+            </div>
+            <div>
+                Sexo:
+                <p>
+                    <input type="radio" name="sexo" value="Masculino" id="m">
+                    <label for="m">Masculino</label><br>
+                    <input type="radio" name="sexo" value="Femenino" id="f">
+                    <label for="f">Femenino</label><br>
+                    <input type="radio" name="sexo" value="Prefiero no decirlo" id="o">
+                    <label for="o">Prefiero no decirlo</label><br>                 
+                </p>
+            </div>
+            <div>
+                <p>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" name="email" placeholder="example@example.com" id="correo">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="checkbox" name="novedades y ofertas" id="subscripcion" checked> 
+                    <label for="subscripcion">Deseo recibir información sobre novedades y ofertas</label>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="checkbox" name="normativa y protección de datos" id="disclaimer"> 
+                    <label for="disclaimer">Declaro haber leído y aceptar las condiciones generales del programa y la normativa
+                    sobre protección de datos</label>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="poblacion">Población:</label> 
+                    <select name="poblacion" id="poblacion">
+                        <option value="alicante">Alicante</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="valencia">Valencia</option>
+                    </select>
+                </p>    
+            </div>
+            <div>
+
+                <label for="descripcion">Descripción:</label><br>
+                <textarea name="descripcion" rows="5" cols="40" id="descripcion"></textarea>
+            </div>
+            <br>
+            <div>
+                <button>Enviar</button>
+            </div>
+        </form>
+        <hr>
+    </body>
+
+    <footer>
+        <p>© 2026 HBK. Todos los derechos reservados.<br>Trading · Desarrollo de software · Automatización · Tecnología</p>
+    </footer>
+</body>
+</html>
