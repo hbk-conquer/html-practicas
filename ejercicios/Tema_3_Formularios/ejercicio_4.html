@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre el producto</title>
+</head>
+<body>
+    <header>
+        <h1>Información sobre el producto</h1>
+            <nav>
+                <p><a href="Tema_3_Formularios.html">👈Volver atrás</a></p>
+                <p><a href="../../index.html">👈👈Página de inicio</a></p>
+            </nav>
+        <hr>
+            <a href="ejercicio_3.html">👈Ejercicio 3</a>
+        <hr>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Datos básicos</legend>
+                <div>
+                    Nombre<br>
+                    <input type="text" name="nombre" size="60"><br><br>
+                </div>
+                <div>
+                    Descripción<br>
+                    <textarea name="descripcion" rows="5" cols="50"></textarea><br>
+                </div>
+                <div>
+                    Foto
+                    <input type="file" name="foto">
+                    <br><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="contador_visitas" id="contador">
+                    <label for="contador">Añadir contador de visitas</label>
+                    <br>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos económicos</legend>
+                <div>
+                    <table height="150" width="300">
+                        <tr>
+                            <td>Precio <input type="text" size="5" maxlength="5">€</td>
+                            <td>Impuestos <select name="impuestos">
+                                <option value="4">4%</option>
+                                <option value="7">7%</option>
+                                <option value="16">16%</option>
+                                <option value="25">25%</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Promoción<br>
+                                <input type="radio" name="promocion" id="ninguno">
+                                <label for="ninguno">Ninguno</label><br>
+                                <input type="radio" name="promocion" id="freeride">
+                                <label for="freeride">Transporte gratuito</label><br>
+                                <input type="radio" name="promocion" id="descuento">
+                                <label for="descuento">Descuento 5%</label><br>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                       
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </fieldset>
+        </form>
+        <hr>
+    </main>
+
+    <footer>
+        <p>© 2026 HBK. Todos los derechos reservados.<br>Trading · Desarrollo de software · Automatización · Tecnología</p>
+    </footer>
+</body>
+</html>

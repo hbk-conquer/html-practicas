@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellena tu CV</title>
+</head>
+<body>
+    <header>
+        <h1>Rellena tu CV</h1>
+            <nav>
+                <p><a href="Tema_3_Formularios.html">👈Volver atrás</a></p>
+                <p><a href="../../index.html">👈👈Página de inicio</a></p>
+            </nav>
+        <hr>
+            <a href="ejercicio_2.html">👈Ejercicio 2</a>
+            <a href="ejercicio_4.html">👉Ejercicio 4</a>
+        <hr>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div>
+                    Provincia<br>
+                    <select name="provincia">
+                        <option value="">- selecciona -</option>
+                        <option value="bizkaia">Bizkaia</option>
+                        <option value="araba">Álava</option>
+                        <option value="gipuzkoa">Gipuzkoa</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    Fecha de nacimiento<br>
+                    <input type="number" name="dia" min="1" max="31" maxlength="2">
+                    de
+                    <select name="mes">
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                    de
+                    <input type="number" name="año" min="1900" max="2026" minlength="4" maxlength="4">
+                </div>
+                <br>
+                <div>
+                    Temas de interés<br>
+                    <select multiple name="interes">
+                        <option value="admin_y_bases">Administración de bases de datos</option>
+                        <option value="analisis_y_prog">Análisis y programación</option>
+                        <option value="arquitectura">Arquitectura</option>
+                        <option value="calidad">Calidad</option>
+                        <option value="business">ERP, CRM, Business Intelligence</option>
+                        <option value="desarrollo">Desarrollo de sofware</option>
+                        <option value="automatizacion">Automatización de procesos</option>
+                        <option value="ia">Inteligencia artificial</option>
+                        <option value="bolsa">Mercados financieros</option>
+                        <option value="tech_innovacion">Tecnología e innovación</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+        <hr>
+    </main>
+
+    <footer>
+        <p>© 2026 HBK. Todos los derechos reservados.<br>Trading · Desarrollo de software · Automatización · Tecnología</p>
+    </footer>
+</body>
+</html>
