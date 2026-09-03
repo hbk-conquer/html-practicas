@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <header>
+        <h1>Imágenes</h1>
+            <nav>
+                <p><a href="Tema_4_Imagenes_y_Multimedia.html">👈Volver atrás</a></p>
+                <p><a href="../../index.html">👈👈Página de inicio</a></p>
+            </nav>
+        <hr>
+            <a href="ejercicio_2.html">👉Multimedia</a>
+        <hr>
+    </header>
+
+    <main>
+        <div>
+            <h2>Imagenes con etiqueta <strong>&lt;img&gt;</strong></h2>
+            <h3>Imagen de la galeria picsum</h3>
+                <figure>
+                    <img src="https://picsum.photos/seed/picsum/300/200" alt="imágen de picsum">
+                    <figcaption>Una imagen de una montaña nevada</figcaption>                
+                </figure>
+                
+            
+            <h3>Imagen de mi carpeta personal img</h3>
+                <figure>
+                    <img src="../../img/Fenix.jpg" width="200" height="200" alt="imágen de fénix dorado">
+                    <figcaption>Imágen de un Fénix dorado que uso como representación</figcaption>
+                </figure>
+        </div>
+        <hr>
+        <div>
+            <h2>Imagenes con etiqueta <strong>&lt;picture&gt;</strong></h2>
+            <figure>
+                <h3>Uso de <strong>&lt;source&gt;</strong> como ejemplo práctico de diferentes resoluciones</h3>
+                <picture>
+                    <figcaption>Reduce el tamaño de la ventana para ver la siguiente imágen</figcaption>
+                    <source media="(min-width:1024px)"
+                            srcset="../../img/Logo_instagram.jfif" alt="logo instagram">
+                    <source media="(min-width:850px)"
+                            srcset="../../img/Logo_linkedin.png" alt="logo linkedin">
+                    <source media="(min-width:700px)"
+                            srcset="../../img/Fenix.jpg" width="150" height="150" alt="logo fenix">
+                    <img src="../../img/Logo_github.png" alt="logo github">
+                </picture>
+            </figure>                
+        </div>            
+    </main>
+    <hr>
+    <footer>
+        <p>© 2026 HBK. Todos los derechos reservados.<br>Trading · Desarrollo de software · Automatización · Tecnología</p>
+    </footer>
+</body>
+</html>

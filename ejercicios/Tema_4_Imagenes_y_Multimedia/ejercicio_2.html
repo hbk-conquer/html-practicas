@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <header>
+        <h1>Multimedia</h1>
+            <nav>
+                <p><a href="Tema_4_Imagenes_y_Multimedia.html">👈Volver atrás</a></p>
+                <p><a href="../../index.html">👈👈Página de inicio</a></p>
+            </nav>
+        <hr>
+            <a href="ejercicio_1.html">👈Imágenes</a>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Indice</h2>
+            <nav>
+                <ul>
+                    <a href="#embed"><li>&lt;embed&gt;</li></a>
+                        <ol>
+                            <a href="#embed_web"><li>Url a Web</li></a> 
+                            <a href="#embed_img"><li>Imágen</li></a>
+                            <a href="#embed_video"><li>Vídeo</li></a>
+                            <a href="#embed_audio"><li>Audio</li></a>
+                        </ol>
+                    <a href="#iframe"><li>&lt;iframe&gt;</li></a>
+                        <ol>
+                            <a href="#iframe_web"><li>Url a Web</li></a>
+                            <a href="#img"><li>Imágen</li></a>
+                            <a href="#video"><li>Vídeo</li></a>
+                            <a href="#audio"><li>Audio</li></a>
+                        </ol>
+                </ul>
+            </nav>
+        <hr>
+        <h2 id="embed">Uso de <strong>&lt;embed&gt; como etiqueta para todo</strong></h2>
+        <div>
+            <ul>
+                <li id="embed_web"><h3>Página de HTML5 en Wikipedia</h3></li><br>
+                <embed src="https://es.wikipedia.org/wiki/HTML" type="text/html" width="1240" height="300"><br><br>
+
+                <li id="embed_img"><h3>Una imágen de Picsum</h3></li><br>
+                <embed src="https://picsum.photos/seed/picsum/300/200" alt="imágen de picsum">
+                <embed src="https://picsum.photos/seed/{seed}/300/200" alt="imágen de picsum"><br><br>
+
+                <li id="embed_video"><h3>Un video de YouTube</h3></li>
+                <p><strong>NOTA</strong>: Los archivos de video utilizando &lt;embed&gt; no se pueden controlar
+                        de forma fiable únicamente con HTML5 estándar.</p>
+                    <embed src="https://www.youtube.com/embed/i3tfCXGuLhk?si=h7csHhZtB6TKgM3u" 
+                            width="560" height="315" 
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen><br><br>
+
+                <li id="embed_audio"><h3>Audio de Telegram</h3></li>
+                <p><strong>NOTA</strong>: Los archivos de audio utilizando &lt;embed&gt; no se pueden controlar
+                    de forma fiable únicamente con HTML5 estándar.</p>
+                <embed src="../../media/audio_prueba.ogg" type="audio/ogg" width="250" heigth="100">
+            </ul>
+        </div>
+        <hr>
+        <h2 id="iframe">Uso de <strong>&lt;iframe&gt;</strong> y etiquetas correspondientes</h2>
+        <div>
+            <ul>
+                <li id="iframe_web"><h3>Página de CSS en Wikipedia &lt;iframe&gt;</h3></li><br>
+                    <iframe src="https://es.wikipedia.org/wiki/CSS" width="1240" height="300"></iframe><br><br>
+
+                <li id="img"><h3>Una imágen de Picsum &lt;img&gt;</h3></li><br>
+                    <img src="https://picsum.photos/seed/picsum/300/200" alt="imágen de picsum">
+                    <img src="https://picsum.photos/seed/{seed}/300/200" alt="imágen de picsum"><br><br>
+
+                <table width="800" id="video">
+                    <tr>
+                        <td><li><h3>Un video mío &lt;video&gt;</h3></li></td>
+                        <td><li><h3>Un video de youtube &lt;iframe&gt;</h3></li></td>
+                    </tr>
+                    <tr>
+                        <td><video src="../../media/video_prueba.mp4" width="200" height="315" controls></video></td>
+                        <td><iframe src="https://www.youtube.com/embed/dtUj9Blt_Zc?si=979ztSaks1Grwbhx" 
+                            width="560" height="315" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen></iframe></td>
+                    </tr>
+                </table><br><br>
+                
+
+                <li id="audio"><h3>Audio de Telegram &lt;audio&gt;</h3></li>
+                    <audio src="../../media/audio_prueba.ogg" controls></audio>
+            </ul>
+        </div>
+        
+        
+    </main>
+
+    <hr>
+    <footer>
+        <p>© 2026 HBK. Todos los derechos reservados.<br>Trading · Desarrollo de software · Automatización · Tecnología</p>
+    </footer>
+</body>
+</html>
